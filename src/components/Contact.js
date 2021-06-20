@@ -11,8 +11,8 @@ const Contact = () => {
             asfd adfs asdf adsf adsf afds adfs adsf adsf adsf dsf dsf dsadsf ad sfadsf
             asfd asdf asdf asdf asdf adfs dasf dfsa dfs dasf dsa dsaf dfas asdf dfsa
           </p>
-          <form action="" className="contact-form">
-            <input type="email" className="form-input" placeholder="enter email"/>
+          <form action="https://formspree.io/f/mleanvrg" method="POST" className="contact-form">
+            <input type="email" className="form-input" placeholder="enter email" name="_replyto"/>
             <button type="submit" className="submit-btn">
               subscribe
             </button>
