@@ -28,40 +28,59 @@ const Filters = () => {
   return (
     <Wrapper>
       <div className="content">
-        <form onSubmit={(e) => e.preventDefault()}></form>
-        {/* search input */}
-        <div className="form-control">
-          <input
-            type="text"
-            name="text"
-            placeholder="search"
-            className="search-input"
-            value={text}
-            onChange={updateFilters}
-          />
-          {/* end search input */}
-          {/* categories */}
+        <form onSubmit={(e) => e.preventDefault()}>
+          {/* search input */}
           <div className="form-control">
-            <h5>category</h5>
-            <div>{
-              categories.map((c, index) => {
-                return (
-                  <button 
-                    key={index} 
-                    onClick={updateFilters}
-                    type="button"
-                    name="category"
-                    className={`${
-                      category === c.toLowerCase() ? "active" : null
-                    }`}
-                  >
-                    {c}
-                  </button>)
-              })
-              }</div>
+            <input
+              type="text"
+              name="text"
+              placeholder="search"
+              className="search-input"
+              value={text}
+              onChange={updateFilters}
+            />
+            {/* end search input */}
+            {/* categories */}
+            <div className="form-control">
+              <h5>category</h5>
+              <div>{
+                categories.map((c, index) => {
+                  return (
+                    <button 
+                      key={index} 
+                      onClick={updateFilters}
+                      type="button"
+                      name="category"
+                      className={`${
+                        category === c.toLowerCase() ? "active" : null
+                      }`}
+                    >
+                      {c}
+                    </button>)
+                })
+                }</div>
+            </div>
+            {/* end of categories */}
+            {/* companies */}
+            <div className="form-control">
+              <h5>Company</h5>
+              <select 
+                name="company"
+                value={company}
+                onChange={updateFilters}
+                className={company}
+              >
+                {companies.map((c, index) => {
+                  return (
+                    <option key={index} value={c}>
+                      {c}
+                    </option>
+                  )
+                })} 
+              </select>
+            </div>
           </div>
-          {/* end of categories */}
-        </div>
+        </form>
       </div>
     </Wrapper>
 
