@@ -123,8 +123,8 @@ const CheckoutForm = () => {
         {error && <div className="card-error" role="alert">{error}</div>}
         {/* Show a success message upon completion */}
         <p className={succeeded ? "result-message" : "result-message hidden"}>
-          Payment Succeeded, see the result in your 
-          <a href={`https://dashboard.stripe.com/test/payments`}>Stripe Dashboard</a>
+          Payment Succeeded! See the result in your 
+          <a href={`https://dashboard.stripe.com/test/payments`}> Stripe Dashboard. </a>
           Refresh the page to pay again.
         </p>
       </form>
