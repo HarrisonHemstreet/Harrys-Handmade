@@ -11,6 +11,7 @@ import { Cart } from '../pages'
 
 const Nav = () => {
   const {openSidebar} = useProductsContext();
+  const {myUser} = useUserContext();
   return (
     <NavContainer>
       <div className='nav-center'>
@@ -29,6 +30,13 @@ const Nav = () => {
               <Link to={url}>{text}</Link>
             </li>
           })}
+          {
+            myUser && (
+              <li>
+                <Link to="/checkout">checkout</Link>
+              </li>
+            )
+          }
         </ul>
       <CartButtons />
       </div>
