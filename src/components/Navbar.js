@@ -62,9 +62,7 @@ const NavContainer = styled.nav`
     justify-content: space-between;
     img {
       width: 175px;
-      margin-left: -15px;
-      margin-top: 45px;
-      transform: rotate(340deg);
+      margin-top: 3rem;
     }
   }
   .nav-toggle {
