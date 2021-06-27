@@ -17,8 +17,8 @@ const Nav = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
-            <h1>Harry's Handmade</h1>
-            {/* <img src={logo} alt='comfy sloth' /> */}
+            {/* <h1>Harry's Handmade</h1> */}
+            <img src={logo} alt="Harry's Handmade" />
           </Link>
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
