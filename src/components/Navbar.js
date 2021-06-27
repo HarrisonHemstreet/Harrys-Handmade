@@ -64,6 +64,7 @@ const NavContainer = styled.nav`
       width: 175px;
       margin-left: -15px;
       margin-top: 45px;
+      transform: rotate(340deg);
     }
   }
   .nav-toggle {
